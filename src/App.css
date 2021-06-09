@@ -1,0 +1,66 @@
+@font-face{
+    font-family:"Dungeon";
+    src: url('./DUNGRG__.TTF');
+    font-weight:"bold"
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family:"Dungeon" !important;
+}
+body{
+    background-color: antiquewhite;
+  
+}
+
+#colors{
+    color:#1a1a1d;
+    color:#4e4e50;
+    color:#6f2232;
+    color:#950740;
+    color:#c3073F;
+}
+
+::-webkit-scrollbar{
+   display: none;
+    
+}
+.defaultFont{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 30px;
+}
+.noScroll::-webkit-scrollbar{
+    display:none
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+html{
+    height:"1200px";
+    overflow:scroll
+}
+
+.spin{
+        border: 16px solid #525252; /* Light grey */
+        border-top: 16px solid #5C0307; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    
+}
+input:focus{
+    border:none;
+}
+
+
+.dev{
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
